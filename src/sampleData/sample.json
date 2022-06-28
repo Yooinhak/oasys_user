@@ -1,0 +1,34 @@
+{
+  "storeInfo": {
+    "storeName": "",
+    "storeInfo": "",
+    "storeIntro": ""
+  },
+  "categori": [
+    {
+      "name": "",
+      "menu": [
+        {
+          "id": 1,
+          "name": "",
+          "price": 0,
+          "info": "",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "",
+              "essential": "",
+              "selector": [
+                {
+                  "name": "",
+                  "price": 0,
+                  "id": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

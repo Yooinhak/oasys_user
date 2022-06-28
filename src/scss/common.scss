@@ -1,0 +1,13 @@
+@mixin box-display(
+  $dp: inline-block,
+  $w: auto,
+  $h: auto,
+  $ai: normal,
+  $jc: normal
+) {
+  display: $dp;
+  width: $w;
+  height: $h;
+  align-items: $ai;
+  justify-content: $jc;
+}

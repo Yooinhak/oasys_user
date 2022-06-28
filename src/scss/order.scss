@@ -1,0 +1,86 @@
+@import 'common.scss';
+
+.FoodInfoContainer > h1 {
+  margin: 0px 0px 5% 0px;
+}
+
+.foodImg {
+  width: 100%;
+  height: 20vh;
+  background-color: gray;
+}
+
+.FoodInfoContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+  padding: 5%;
+}
+
+.FoodPriceContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.FoodAmountContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.amountBtn {
+  & > b {
+    margin: 0 5px;
+  }
+
+  & > button {
+    color: black;
+  }
+}
+
+.orderMainContainer {
+  @include box-display(flex, 90%, auto);
+  padding: 5%;
+  flex-direction: column;
+}
+
+.addContainer {
+  b {
+    @include box-display(flex, 90%, auto);
+    margin-bottom: 5%;
+  }
+  .addCategori {
+    margin-bottom: 5%;
+  }
+}
+
+.addItem {
+  margin: 1.5% 1.5%;
+}
+
+input {
+  margin-right: 3%;
+}
+
+.orderPrefContainer,
+.rcContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+
+  b {
+    margin: 5% 0;
+  }
+}
+
+.addBtn {
+  @include box-display(flex, 90%, 5vh, center, center);
+  color: black;
+  margin-top: 5vh;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.addItem > input:nth-child(2) {
+  @include box-display(flex, 100%, 8vh, center, center);
+  margin-top: 3%;
+}

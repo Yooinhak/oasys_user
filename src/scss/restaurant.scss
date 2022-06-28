@@ -1,0 +1,7 @@
+@import './common.scss';
+
+.infoHoleContainer {
+  @include box-display(flex, 100%, 100vh, auto, center);
+  flex-direction: column;
+  white-space: pre-wrap;
+}

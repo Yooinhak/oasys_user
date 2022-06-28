@@ -1,0 +1,66 @@
+@import 'common.scss';
+
+.itemContainer {
+  @include box-display(flex, 90%, auto);
+  padding: 5%;
+  flex-direction: column;
+}
+
+.item {
+  @include box-display(flex, 90%, auto);
+  flex-direction: row;
+  padding: 2%;
+}
+
+.img {
+  @include box-display(flex, 15vh, 15vh);
+  background-color: gray;
+  margin-right: 3vh;
+}
+
+.itemInfo > div:first-child {
+  margin-bottom: 3vh;
+}
+
+.addItemBtn {
+  @include box-display(flex, 40%, 5vh, center, center);
+  background-color: gray;
+  margin-top: 3vh;
+  margin-left: 60%;
+  color: black;
+}
+
+.listText {
+  margin-bottom: 10%;
+}
+
+.totalContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+  padding: 5%;
+}
+
+.totalPrice {
+  margin-top: 5%;
+  font-size: 5vh;
+  margin-left: 80%;
+}
+
+.cartHoleContainer > .prefContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+  padding: 5%;
+}
+
+.prefInfo {
+  width: 90%;
+  padding: 5%;
+  background-color: gray;
+  margin-top: 5%;
+}
+
+.prefItem {
+  & + & {
+    margin-top: 3%;
+  }
+}

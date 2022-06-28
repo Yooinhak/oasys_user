@@ -1,0 +1,26 @@
+@import 'common.scss';
+
+.LCPUholeContainer {
+  @include box-display(flex, 100%, 100vh, center, center);
+  background-color: gray;
+}
+
+.LCPUBox {
+  @include box-display(flex, 50%, 30vh, center, center);
+  flex-direction: column;
+  border-radius: 5%;
+  background-color: white;
+}
+
+select {
+  width: 200px; /* 원하는 너비설정 */
+  padding: 0.8em 0.5em; /* 여백으로 높이 설정 */
+  font-family: inherit; /* 폰트 상속 */
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
+    no-repeat 95% 50%; /* 네이티브 화살표 대체 */
+  border: 1px solid #999;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
