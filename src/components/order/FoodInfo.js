@@ -5,6 +5,7 @@ const FoodInfo = ({ currentFood, onIncreaseAmount, onDecreaseAmount }) => {
   return (
     <div className='FoodInfoContainer'>
       <h1>{currentFood.info.name}</h1>
+      <div className='info'>{currentFood.info.info}</div>
       <div className='FoodPriceContainer'>
         price
         <b>{currentFood.totalPrice}</b>

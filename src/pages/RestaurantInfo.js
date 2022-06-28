@@ -2,7 +2,7 @@ import React from 'react';
 import '../scss/restaurant.scss';
 
 const RestaurantInfo = () => {
-  const jsonData = require('../sampleData/sample1.json');
+  const jsonData = require('../sampleData/jangs_eng.json');
   const stInfo = jsonData.storeInfo;
   return (
     <div className='infoHoleContainer'>

@@ -1,0 +1,256 @@
+{
+  "storeInfo": {
+    "storeName": "Jang's",
+    "storeInfo": "장가네\n전화번호: 02-732-7522\n주소: 서울 종로구 종로1길 57\n대표자명: \n사업자등록번호: \n상호명: 장가네",
+    "storeIntro": "안녕하세요 장가네입니다."
+  },
+  "categori": [
+    {
+      "id": 1,
+      "name": "Stew",
+      "menu": [
+        {
+          "id": 101,
+          "name": "Kimchi Stew",
+          "price": 7000,
+          "info": "Kimchi Stew with tofu, vegetables",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "A bowl of rice",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Doenjang Stew",
+          "price": 7000,
+          "info": "Soy Paste Stew with tofu, clams, vegetables",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "name": "Fried egg",
+                  "price": 1000,
+                  "id": 1
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Sundofu Stew",
+          "price": 7000,
+          "info": "Soft Bean Curd Stew with clams, vegetables",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                },
+                {
+                  "id": 2,
+                  "name": "A bowl of rice",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "Pulgogi Stew",
+          "price": 8000,
+          "info": "Boiled beef with some vegetables, soy sauce",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                },
+                {
+                  "id": 2,
+                  "name": "A bowl of rice",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "name": "Budae Stew",
+          "price": 8000,
+          "info": "Kimchi with sausage, boodle, pork, ham",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                },
+                {
+                  "id": 2,
+                  "name": "A bowl of rice",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rice Dish",
+      "menu": [
+        {
+          "id": 201,
+          "name": "Pibimbap",
+          "price": 7000,
+          "info": "Steamed rice with assorted vegetables and a fried egg on top",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Tolsot Pibimbab",
+          "price": 8000,
+          "info": "Pibimbab in a hot stone pot",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 203,
+          "name": "Pork with rice",
+          "price": 8000,
+          "info": "Spicy pork dish on top",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

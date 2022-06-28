@@ -25,8 +25,10 @@ const FoodComponent = ({ food }) => {
     <Link to='/order' style={{ textDecoration: 'none', color: 'inherit' }}>
       <div className='foodBox' onClick={onChangeState}>
         <div>
-          <div className='foodExplain'>{food.name}</div>
-          <div className='foodExplain'>{food.price}</div>
+          <b className='foodExplain'>{food.name}</b>
+          <div className='foodExplain'>
+            {food.price.toLocaleString('ko-KR')}
+          </div>
           <div className='foodExplain'>
             {food.info.length < 30 ? food.info : `${food.info.slice(0, 30)}...`}
           </div>
@@ -38,7 +40,7 @@ const FoodComponent = ({ food }) => {
 };
 
 const Content = () => {
-  const categori = require('../../sampleData/sample1.json').categori;
+  const categori = require('../../sampleData/jangs_eng.json').categori;
   return (
     <div className='contentContainer'>
       <div className='categoriesContainer'>

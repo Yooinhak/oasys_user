@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../scss/cart.scss';
 
-const TotalPrice = () => {
+const TotalPrice = ({ currentTotalPrice }) => {
   return (
     <div className='totalContainer'>
-      <div>Total</div>
-      <div className='totalPrice'>$30</div>
+      <div>Price</div>
+      <div className='totalPrice'>{currentTotalPrice}원</div>
     </div>
   );
 };

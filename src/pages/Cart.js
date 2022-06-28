@@ -1,13 +1,17 @@
 import React from 'react';
 import '../scss/cart.scss';
-import { Items, TotalPrice, Preference } from '../components/cart/index';
+import {
+  ItemContainer,
+  TotalPriceContainer,
+  PreferenceContainer,
+} from '../containers/AddCartContainer';
 
 const Order = () => {
   return (
     <div className='cartHoleContainer'>
-      <Items />
-      <TotalPrice />
-      <Preference />
+      <ItemContainer />
+      <TotalPriceContainer />
+      <PreferenceContainer />
     </div>
   );
 };

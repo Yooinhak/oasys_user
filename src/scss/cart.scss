@@ -7,27 +7,43 @@
 }
 
 .item {
-  @include box-display(flex, 90%, auto);
-  flex-direction: row;
+  @include box-display(flex, 96%, auto);
   padding: 2%;
+  justify-content: space-between;
 }
 
 .img {
-  @include box-display(flex, 15vh, 15vh);
+  @include box-display(flex, 12vh, 12vh);
   background-color: gray;
   margin-right: 3vh;
+}
+
+.itemBox {
+  @include box-display(flex, 100%, auto);
 }
 
 .itemInfo > div:first-child {
   margin-bottom: 3vh;
 }
 
+.fcBox {
+  display: flex;
+  align-items: flex-end;
+  b {
+    margin: 5%;
+  }
+}
+
 .addItemBtn {
-  @include box-display(flex, 40%, 5vh, center, center);
+  padding: 8%;
+  font-size: 1.8vh;
   background-color: gray;
-  margin-top: 3vh;
-  margin-left: 60%;
   color: black;
+}
+
+.addBtnBox {
+  @include box-display(flex, 100%, auto, center, flex-end);
+  margin-top: 3vh;
 }
 
 .listText {
@@ -41,9 +57,9 @@
 }
 
 .totalPrice {
+  @include box-display(flex, 100%, auto, auto, flex-end);
   margin-top: 5%;
-  font-size: 5vh;
-  margin-left: 80%;
+  font-size: 4vh;
 }
 
 .cartHoleContainer > .prefContainer {
@@ -60,7 +76,12 @@
 }
 
 .prefItem {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.foodPrefBox {
   & + & {
-    margin-top: 3%;
+    margin-top: 10%;
   }
 }

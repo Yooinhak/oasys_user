@@ -1,23 +1,71 @@
 const ADD_TO_CART = 'cart/ADD_TO_CART';
+const ADJ_INCREASE_AMOUNT = 'cart/ADJ_INCREASE_AMOUNT';
+const ADJ_DECREASE_AMOUNT = 'cart/ADJ_DECREASE_AMOUNT';
 
 export const add_to_cart = (item) => ({ type: ADD_TO_CART, item });
+export const adj_increase_amount = (id) => ({
+  type: ADJ_INCREASE_AMOUNT,
+  id,
+});
+export const adj_decrease_amount = (id) => ({
+  type: ADJ_DECREASE_AMOUNT,
+  id,
+});
 
 let nextId = 1;
-const cartState = [];
+const cartState = {
+  items: [],
+  sumPrice: 0,
+};
 
 export default function cart(state = cartState, action) {
   switch (action.type) {
     case ADD_TO_CART:
-      return [
-        ...state,
-        {
-          totalPrice: action.item.totalPrice,
-          amout: action.item.amount,
-          info: action.item.info,
-          pref: action.item.pref,
-          id: nextId++,
-        },
-      ];
+      return {
+        sumPrice: state.sumPrice + action.item.totalPrice,
+        items: [
+          ...state.items,
+          {
+            totalPrice: action.item.totalPrice,
+            eachPrice: action.item.info.price,
+            name: action.item.info.name,
+            amount: action.item.amount,
+            pref: action.item.pref,
+            id: nextId++,
+          },
+        ],
+      };
+    case ADJ_INCREASE_AMOUNT:
+      return {
+        sumPrice:
+          state.sumPrice +
+          state.items.filter((v) => v.id === action.id)[0].eachPrice,
+        items: state.items.map((v) => {
+          if (v.id === action.id) {
+            return {
+              ...v,
+              totalPrice: v.totalPrice + v.eachPrice,
+              amount: v.amount + 1,
+            };
+          } else {
+            return v;
+          }
+        }),
+      };
+    case ADJ_DECREASE_AMOUNT:
+      const currentFood = state.items.filter((v) => v.id === action.id)[0];
+      return {
+        sumPrice: state.sumPrice - currentFood.eachPrice,
+        items: state.items.map((v) => {
+          if (v.id === action.id) {
+            return {
+              ...v,
+              totalPrice: v.totalPrice - v.eachPrice,
+              amount: v.amount - 1,
+            };
+          } else return v;
+        }),
+      };
     default:
       return state;
   }
