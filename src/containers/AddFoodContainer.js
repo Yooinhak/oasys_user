@@ -1,8 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increase_amount, decrease_amount, plus_item } from '../modules/food';
-import { FoodInfo } from '../components/order';
-import { Add } from '../components/order';
+import {
+  increase_amount,
+  decrease_amount,
+  plus_item,
+  set_pref,
+  set_add_pref,
+} from '../modules/food';
+import { FoodInfo, Add, Preference } from '../components/order';
 
 export const AdjAmount = () => {
   const currentFood = useSelector((state) => state.food);
@@ -25,4 +30,19 @@ export const AddContainer = () => {
   const onChangePrice = (price, event) => dispatch(plus_item(price, event));
 
   return <Add currentFood={currentFood} onChangePrice={onChangePrice} />;
+};
+
+export const PrefContainer = () => {
+  const currentFood = useSelector((state) => state.food);
+  const dispatch = useDispatch();
+  const onChangePref = (text) => dispatch(set_pref(text));
+  const onAddPref = (text, bool) => dispatch(set_add_pref(text, bool));
+
+  return (
+    <Preference
+      currentFood={currentFood}
+      onChangePref={onChangePref}
+      onAddPref={onAddPref}
+    />
+  );
 };
