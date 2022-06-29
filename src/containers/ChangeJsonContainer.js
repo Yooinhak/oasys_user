@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { change_lang } from '../modules/json';
 import Selector from '../components/LanguageChoicePopIp/Selector';
 
