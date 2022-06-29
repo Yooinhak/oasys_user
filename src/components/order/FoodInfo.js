@@ -8,7 +8,7 @@ const FoodInfo = ({ currentFood, onIncreaseAmount, onDecreaseAmount }) => {
       <div className='info'>{currentFood.info.info}</div>
       <div className='FoodPriceContainer'>
         price
-        <b>{currentFood.totalPrice}</b>
+        <b>{currentFood.totalPrice.toLocaleString('ko-KR')}</b>
       </div>
       <div className='FoodAmountContainer'>
         Amount

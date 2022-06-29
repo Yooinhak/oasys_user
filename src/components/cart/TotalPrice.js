@@ -5,7 +5,9 @@ const TotalPrice = ({ currentTotalPrice }) => {
   return (
     <div className='totalContainer'>
       <div>Price</div>
-      <div className='totalPrice'>{currentTotalPrice}원</div>
+      <div className='totalPrice'>
+        {currentTotalPrice.toLocaleString('ko-KR')} won
+      </div>
     </div>
   );
 };

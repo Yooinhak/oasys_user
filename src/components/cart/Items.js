@@ -10,7 +10,7 @@ const Item = ({ food, onIncreaseAmount, onDecreaseAmount }) => {
         <div className='img'></div>
         <div className='itemInfo'>
           <div>{food.name}</div>
-          <div>{food.totalPrice}원</div>
+          <div>{food.totalPrice.toLocaleString('ko-KR')}원</div>
         </div>
       </div>
       <div className='fcBox'>

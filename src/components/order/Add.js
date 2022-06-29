@@ -15,7 +15,7 @@ const Add = ({ currentFood, onChangePrice }) => {
                     type='checkbox'
                     onChange={(e) => onChangePrice(v2.price, e.target.checked)}
                   />
-                  {v2.name} ({`+${v2.price}`})
+                  {v2.name} ({`+${v2.price.toLocaleString('ko-KR')}`})
                 </div>
               );
             })}
