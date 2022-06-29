@@ -1,13 +1,15 @@
 import React from 'react';
 import '../../scss/order.scss';
+import { useSelector } from 'react-redux';
 
 const FoodInfo = ({ currentFood, onIncreaseAmount, onDecreaseAmount }) => {
+  const lang = useSelector((state) => state.lang);
   return (
     <div className='FoodInfoContainer'>
       <h1>{currentFood.info.name}</h1>
       <div className='info'>{currentFood.info.info}</div>
       <div className='FoodPriceContainer'>
-        price
+        {lang.slice(-7, -5) === 'kr' ? '메뉴 카테고리' : 'menu categories'}
         <b>{currentFood.totalPrice.toLocaleString('ko-KR')}</b>
       </div>
       <div className='FoodAmountContainer'>

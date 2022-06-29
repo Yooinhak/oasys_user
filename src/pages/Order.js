@@ -18,7 +18,7 @@ const OrderInfo = () => {
 const Order = () => {
   return (
     <div className='orderHoleContainer'>
-      <div className='foodImg' />
+      {/* <div className='foodImg' /> */}
       <AdjAmount />
       <OrderInfo />
     </div>

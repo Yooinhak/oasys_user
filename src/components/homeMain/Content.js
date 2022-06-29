@@ -30,7 +30,9 @@ const FoodComponent = ({ food }) => {
             {food.price.toLocaleString('ko-KR')}
           </div>
           <div className='foodExplain'>
-            {food.info.length < 30 ? food.info : `${food.info.slice(0, 30)}...`}
+            {/* 이미지가 있을때는 글자수 제한 */}
+            {/* {food.info.length < 30 ? food.info : `${food.info.slice(0, 30)}...`} */}
+            {food.info}
           </div>
         </div>
         {/* <div className='foodImg' /> */}
@@ -40,12 +42,19 @@ const FoodComponent = ({ food }) => {
 };
 
 const Content = () => {
-  const language = useSelector((state) => state.lang);
+  const [language, cartAmount] = useSelector((state) => [
+    state.lang,
+    state.cart.items.length,
+  ]);
   const categori = require(`../../sampleData/${language}`).categori;
   return (
     <div className='contentContainer'>
       <div className='categoriesContainer'>
-        <h1>menu categories</h1>
+        <h1>
+          {language.slice(-7, -5) === 'kr'
+            ? '메뉴 카테고리'
+            : 'menu categories'}
+        </h1>
         <div className='categoriesScrollContainer'>
           <ScrollMenu>
             {categori.map((v) => {
@@ -63,7 +72,8 @@ const Content = () => {
           return <FoodCategoriComponent key={v.id} categori={v} />;
         })}
       </div>
-      <Link to='/cart'>
+      <Link className='homeGoCartLink' to='/cart'>
+        <div className='cartAmount'>{cartAmount}</div>
         <button className='goCartBtn'>Cart</button>
       </Link>
     </div>

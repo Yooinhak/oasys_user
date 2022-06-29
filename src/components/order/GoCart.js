@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../scss/order.scss';
 
-export default function GoCart({ onAddItem, currentFood }) {
+export default function GoCart({ onAddItem, currentFood, language }) {
   return (
     <Link to='/home' style={{ textDecoration: 'none' }}>
       <button className='addBtn' onClick={() => onAddItem(currentFood)}>
-        Add to cart!
+        {language.slice(-7, -5) === 'kr' ? '장바구니에 넣기!' : 'Add to cart!'}
       </button>
     </Link>
   );

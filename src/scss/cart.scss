@@ -10,6 +10,9 @@
   @include box-display(flex, 96%, auto);
   padding: 2%;
   justify-content: space-between;
+  & + & {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }
 
 .img {
@@ -19,18 +22,35 @@
 }
 
 .itemBox {
-  @include box-display(flex, 100%, auto);
+  @include box-display(flex, 100%, 12vh);
 }
 
 .itemInfo > div:first-child {
   margin-bottom: 3vh;
+  font-weight: bold;
 }
 
 .fcBox {
   display: flex;
-  align-items: flex-end;
-  b {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: b {
     margin: 5%;
+  }
+}
+
+.adjAmountFcBox {
+  display: flex;
+}
+
+.deleteItemFcBox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  button {
+    background-color: white;
+    font-size: medium;
+    color: black;
   }
 }
 

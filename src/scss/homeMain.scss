@@ -81,7 +81,7 @@
   padding: 5%;
   border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
   div {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -120,4 +120,13 @@ h1 {
   position: fixed;
   right: 3%;
   bottom: 3%;
+}
+
+.homeGoCartLink > .cartAmount {
+  @include box-display(block, 2vh, 2vh, center, center);
+  color: red;
+  position: fixed;
+  right: 3%;
+  bottom: 8%;
+  z-index: 5;
 }

@@ -67,11 +67,10 @@ input {
   margin-right: 3%;
 }
 
-.orderPrefContainer,
-.rcContainer {
-  @include box-display(flex, 90%, auto);
+.orderPrefContainer {
+  @include box-display(flex, 100%, auto);
   flex-direction: column;
-
+  font-size: 10;
   b {
     margin: 5% 0;
   }
@@ -88,4 +87,12 @@ input {
 .addItem > input:nth-child(2) {
   @include box-display(flex, 100%, 8vh, center, center);
   margin-top: 3%;
+}
+
+.addTextItem {
+  textarea {
+    width: 97%;
+    height: 10vh;
+    margin-top: 5%;
+  }
 }
