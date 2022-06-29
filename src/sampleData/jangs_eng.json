@@ -249,6 +249,264 @@
               "text": "Please make it less saulty!"
             }
           ]
+        },
+        {
+          "id": 204,
+          "name": "Pulgogi with rice",
+          "price": 8000,
+          "info": "Beef seasoned with soy sauce on top",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 205,
+          "name": "Omelet",
+          "price": 7000,
+          "info": "Fried with vegetables, topped with egg fries on top",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Noodle",
+      "menu": [
+        {
+          "id": 301,
+          "name": "Mul Naengmyon",
+          "price": 7000,
+          "info": "Buckwheat flour noodles served in chilled beef broth with sliced vegetables",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "Pibim Naengmyon",
+          "price": 7000,
+          "info": "Buckwheat flour noodles with hot paste sauce",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "Sea food noodle",
+          "price": 6000,
+          "info": "",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Special dish",
+      "menu": [
+        {
+          "id": 401,
+          "name": "Buchimgae",
+          "price": 9000,
+          "info": "vegetable pancake",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Soup",
+      "menu": [
+        {
+          "id": 501,
+          "name": "Mandukuk",
+          "price": 7000,
+          "info": "Pork dumpling soup",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "Please make it less spicy!"
+            },
+            {
+              "id": 2,
+              "text": "Please make it less saulty!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Beverage and Drinks",
+      "menu": [
+        {
+          "id": 601,
+          "name": "Coke",
+          "price": 2000,
+          "info": "",
+          "more_info": [],
+          "preference": []
+        },
+        {
+          "id": 602,
+          "name": "Cider",
+          "price": 2000,
+          "info": "",
+          "more_info": [],
+          "preference": []
+        },
+        {
+          "id": 603,
+          "name": "Beer",
+          "price": 5000,
+          "info": "",
+          "more_info": [],
+          "preference": []
         }
       ]
     }

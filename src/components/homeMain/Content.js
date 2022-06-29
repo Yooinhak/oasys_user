@@ -3,7 +3,7 @@ import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 import { Link } from 'react-router-dom';
 import '../../scss/homeMain.scss';
 import { set_state } from '../../modules/food';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 // 음식 카테고리별로
 const FoodCategoriComponent = ({ categori }) => {
@@ -33,14 +33,15 @@ const FoodComponent = ({ food }) => {
             {food.info.length < 30 ? food.info : `${food.info.slice(0, 30)}...`}
           </div>
         </div>
-        <div className='foodImg' />
+        {/* <div className='foodImg' /> */}
       </div>
     </Link>
   );
 };
 
 const Content = () => {
-  const categori = require('../../sampleData/jangs_eng.json').categori;
+  const language = useSelector((state) => state.lang);
+  const categori = require(`../../sampleData/${language}`).categori;
   return (
     <div className='contentContainer'>
       <div className='categoriesContainer'>

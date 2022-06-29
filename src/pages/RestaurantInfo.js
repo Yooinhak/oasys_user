@@ -1,8 +1,10 @@
 import React from 'react';
 import '../scss/restaurant.scss';
+import { useSelector } from 'react-redux';
 
 const RestaurantInfo = () => {
-  const jsonData = require('../sampleData/jangs_eng.json');
+  const language = useSelector((state) => state.lang);
+  const jsonData = require(`../sampleData/${language}`);
   const stInfo = jsonData.storeInfo;
   return (
     <div className='infoHoleContainer'>

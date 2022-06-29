@@ -1,7 +1,7 @@
 {
   "storeInfo": {
     "storeName": "장가네",
-    "storeInfo": "장가네\n전화번호: 02-732-7522\n주소: 서울 종로구 종ㅗ1길 57\n대표자명: \n사업자등록번호: \n상호명: 장가네",
+    "storeInfo": "장가네\n전화번호: 02-732-7522\n주소: 서울 종로구 종로1길 57\n대표자명: \n사업자등록번호: \n상호명: 장가네",
     "storeIntro": "안녕하세요 장가네입니다."
   },
   "categori": [
@@ -11,103 +11,170 @@
       "menu": [
         {
           "id": 101,
-          "name": "김치찌개",
+          "name": " 김치 찌개",
           "price": 7000,
-          "info": "",
+          "info": "두부와 야채가 들어간 김치 찌개",
           "more_info": [
             {
               "id": 1,
-              "title": "뼈or순살 선택",
-              "essential": "Y",
-              "selector": [
-                {
-                  "name": "뼈",
-                  "price": 0,
-                  "id": 1
-                },
-                {
-                  "name": "순살",
-                  "price": 0,
-                  "id": 2
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "title": "메뉴 선택",
-              "essential": "Y",
-              "selector": [
-                {
-                  "name": "후라이드",
-                  "price": 0,
-                  "id": 1
-                },
-                {
-                  "name": "양념",
-                  "price": 2000,
-                  "id": 2
-                },
-                {
-                  "name": "깐풍",
-                  "price": 2000,
-                  "id": 3
-                },
-                {
-                  "name": "후라이드+양념",
-                  "price": 1000,
-                  "id": 4
-                },
-                {
-                  "name": "후라이드+깐풍",
-                  "price": 1000,
-                  "id": 5
-                },
-                {
-                  "name": "양념+깐풍",
-                  "price": 3000,
-                  "id": 6
-                },
-                {
-                  "name": "3종세트",
-                  "price": 3000,
-                  "id": 7
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "title": "추가메뉴",
+              "title": "사이드 메뉴",
               "essential": "N",
               "selector": [
                 {
-                  "name": "무추가",
-                  "price": 500,
+                  "id": 1,
+                  "name": "공기밥",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 102,
+          "name": "된장 찌개",
+          "price": 7000,
+          "info": "두부, 조개, 야채가 들어간 된장 찌개",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "name": "계란후라이",
+                  "price": 1000,
                   "id": 1
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 103,
+          "name": "순두부 찌개",
+          "price": 7000,
+          "info": "조개와 야채가 들어간 순두부 찌개",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
                 },
                 {
-                  "name": "양념소스추가",
-                  "price": 500,
-                  "id": 2
+                  "id": 2,
+                  "name": "공기밥",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "불고기 뚝배기",
+          "price": 8000,
+          "info": "조금의 야채와 간장을 넣어 끓인 소고기",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "side menu",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
                 },
                 {
-                  "name": "맵싸한 디핑소스",
-                  "price": 1000,
-                  "id": 3
+                  "id": 2,
+                  "name": "A bowl of rice",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 105,
+          "name": "부대 찌개",
+          "price": 8000,
+          "info": "소세지, 면, 돼지고기, 햄과 김치가 들어간",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
                 },
                 {
-                  "name": "노랑토마토칠리 소스",
-                  "price": 1000,
-                  "id": 4
-                },
+                  "id": 2,
+                  "name": "공기밥",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "밥류",
+      "menu": [
+        {
+          "id": 201,
+          "name": "비빔밥",
+          "price": 7000,
+          "info": "여러 야채와 계란 후라이를 올려진 밥",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
                 {
-                  "name": "대파올리브마요 소스",
-                  "price": 1000,
-                  "id": 5
-                },
-                {
-                  "name": "콜라(大)추가",
-                  "price": 500,
-                  "id": 6
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
                 }
               ]
             }
@@ -122,6 +189,324 @@
               "text": "덜 짜게 해주세요!"
             }
           ]
+        },
+        {
+          "id": 202,
+          "name": "돌솥 비빔밥",
+          "price": 8000,
+          "info": "뜨거운 돌솥에 담은 비빔밥",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "절 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 203,
+          "name": "제육 덮밥",
+          "price": 8000,
+          "info": "매콤한 돼지가 올려진 밥",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 204,
+          "name": "불고기 덮밥",
+          "price": 8000,
+          "info": "간장으로 양념한 소고기가 올려진 밥",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 205,
+          "name": "오므라이스",
+          "price": 7000,
+          "info": "야채와 같이 계란을 올린 볶음 밥",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "면류",
+      "menu": [
+        {
+          "id": 301,
+          "name": "물냉면",
+          "price": 7000,
+          "info": "채썬 야채와 함께 차가운 소 육수에 담겨 나오는 메밀로 만든 국수",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 302,
+          "name": "비빔냉면",
+          "price": 7000,
+          "info": "매콤한 소스와 함께 나오는 메밀로 만든 국수",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "Fried egg",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        },
+        {
+          "id": 303,
+          "name": "우동",
+          "price": 6000,
+          "info": "해물이 들어간 면",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "특선",
+      "menu": [
+        {
+          "id": 401,
+          "name": "부침개",
+          "price": 9000,
+          "info": "야채 부침 요리",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "국류",
+      "menu": [
+        {
+          "id": 501,
+          "name": "만두국",
+          "price": 7000,
+          "info": "돼지고기가 들어간 만두가 담긴 국",
+          "more_info": [
+            {
+              "id": 1,
+              "title": "사이드 메뉴",
+              "essential": "N",
+              "selector": [
+                {
+                  "id": 1,
+                  "name": "계란후라이",
+                  "price": 1000
+                }
+              ]
+            }
+          ],
+          "preference": [
+            {
+              "id": 1,
+              "text": "덜 맵게 해주세요!"
+            },
+            {
+              "id": 2,
+              "text": "덜 짜게 해주세요!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "음료",
+      "menu": [
+        {
+          "id": 601,
+          "name": "콜라",
+          "price": 2000,
+          "info": "",
+          "more_info": [],
+          "preference": []
+        },
+        {
+          "id": 602,
+          "name": "사이다",
+          "price": 2000,
+          "info": "",
+          "more_info": [],
+          "preference": []
+        },
+        {
+          "id": 603,
+          "name": "맥주",
+          "price": 5000,
+          "info": "",
+          "more_info": [],
+          "preference": []
         }
       ]
     }
