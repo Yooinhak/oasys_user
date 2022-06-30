@@ -12,6 +12,11 @@ const Item = ({ food, onIncreaseAmount, onDecreaseAmount, onDeleteItem }) => {
           <div>{food.name}</div>
           <div>{food.totalPrice.toLocaleString('ko-KR')}원</div>
         </div>
+        <div className='addItemInfoBox'>
+          {food.add_item.map((v) => {
+            return <div>{v.item}</div>;
+          })}
+        </div>
       </div>
       <div className='fcBox'>
         <div className='deleteItemFcBox'>
@@ -42,7 +47,6 @@ const Items = ({
 }) => {
   return (
     <div className='itemContainer'>
-      {console.log(currentCart)}
       {currentCart.map((v) => {
         return (
           <Item

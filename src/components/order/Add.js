@@ -13,7 +13,14 @@ const Add = ({ currentFood, onChangePrice }) => {
                 <div key={v2.id} className='addItem'>
                   <input
                     type='checkbox'
-                    onChange={(e) => onChangePrice(v2.price, e.target.checked)}
+                    onChange={(e) =>
+                      onChangePrice(v2.price, e.target.checked, {
+                        id: v2.id,
+                        item: `${v2.name} (${`+${v2.price.toLocaleString(
+                          'ko-KR',
+                        )}`})`,
+                      })
+                    }
                   />
                   {v2.name} ({`+${v2.price.toLocaleString('ko-KR')}`})
                 </div>

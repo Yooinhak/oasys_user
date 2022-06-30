@@ -41,6 +41,15 @@
 
 .adjAmountFcBox {
   display: flex;
+  background-color: #efefef;
+  border-radius: 30px;
+  padding: 0.5%;
+
+  & > button {
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
 }
 
 .deleteItemFcBox {
@@ -104,4 +113,9 @@
   & + & {
     margin-top: 10%;
   }
+}
+
+.addItemInfoBox {
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 5%;
 }

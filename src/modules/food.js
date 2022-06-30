@@ -11,10 +11,11 @@ export const set_state = (state) => ({
   type: SET_STATE,
   food: state,
 });
-export const plus_item = (price, bool) => ({
+export const plus_item = (price, bool, item) => ({
   type: PLUS_ITEM,
   price,
   bool,
+  item,
 });
 export const set_pref = (text) => ({
   type: SET_PREF,
@@ -36,6 +37,7 @@ const initialState = {
       text: '',
     },
   ],
+  items: [],
 };
 
 export default function food(state = initialState, action) {
@@ -66,6 +68,7 @@ export default function food(state = initialState, action) {
             text: '',
           },
         ],
+        items: [],
       };
     case PLUS_ITEM:
       const sip = state.info.price;
@@ -78,6 +81,9 @@ export default function food(state = initialState, action) {
           ...state.info,
           price: action.bool ? sip + ap : sip - ap,
         },
+        items: action.bool
+          ? [...state.items, action.item]
+          : state.items.filter((v) => v.item !== action.item.item),
       };
     case SET_PREF:
       return {

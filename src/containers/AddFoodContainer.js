@@ -27,7 +27,8 @@ export const AdjAmount = () => {
 export const AddContainer = () => {
   const currentFood = useSelector((state) => state.food);
   const dispatch = useDispatch();
-  const onChangePrice = (price, event) => dispatch(plus_item(price, event));
+  const onChangePrice = (price, event, item) =>
+    dispatch(plus_item(price, event, item));
 
   return <Add currentFood={currentFood} onChangePrice={onChangePrice} />;
 };

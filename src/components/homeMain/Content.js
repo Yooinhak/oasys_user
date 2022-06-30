@@ -8,10 +8,11 @@ import { useDispatch, useSelector } from 'react-redux';
 // 음식 카테고리별로
 const FoodCategoriComponent = ({ categori, categoriRef }) => {
   return (
-    <div className='categoriBox'>
-      <h1 ref={(e) => (categoriRef.current[categori.id] = e)}>
-        {categori.name}
-      </h1>
+    <div
+      ref={(e) => (categoriRef.current[categori.id] = e)}
+      className='categoriBox'
+    >
+      <h1>{categori.name}</h1>
       {categori.menu.map((v) => {
         return <FoodComponent key={v.id} food={v} />;
       })}

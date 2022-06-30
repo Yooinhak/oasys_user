@@ -36,6 +36,7 @@ export default function cart(state = cartState, action) {
             name: action.item.info.name,
             amount: action.item.amount,
             pref: action.item.pref,
+            add_item: action.item.items,
             id: nextId++,
           },
         ],
