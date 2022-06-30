@@ -70,6 +70,10 @@
   color: black;
 }
 
+.addBtn {
+  border-radius: 30px;
+}
+
 .addBtnBox {
   @include box-display(flex, 100%, auto, center, flex-end);
   margin-top: 3vh;
@@ -118,4 +122,8 @@
 .addItemInfoBox {
   color: rgba(0, 0, 0, 0.4);
   margin-left: 5%;
+  li {
+    font-size: small;
+  }
+  margin: 0;
 }
