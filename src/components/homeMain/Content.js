@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ScrollMenu } from 'react-horizontal-scrolling-menu';
 import { Link } from 'react-router-dom';
 import '../../scss/homeMain.scss';
@@ -6,10 +6,12 @@ import { set_state } from '../../modules/food';
 import { useDispatch, useSelector } from 'react-redux';
 
 // 음식 카테고리별로
-const FoodCategoriComponent = ({ categori }) => {
+const FoodCategoriComponent = ({ categori, categoriRef }) => {
   return (
     <div className='categoriBox'>
-      <h1>{categori.name}</h1>
+      <h1 ref={(e) => (categoriRef.current[categori.id] = e)}>
+        {categori.name}
+      </h1>
       {categori.menu.map((v) => {
         return <FoodComponent key={v.id} food={v} />;
       })}
@@ -47,6 +49,15 @@ const Content = () => {
     state.cart.items.length,
   ]);
   const categori = require(`../../sampleData/${language}`).categori;
+
+  const categoriRef = useRef([]);
+  const onFocusCategori = (id) => {
+    categoriRef.current[id].scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
   return (
     <div className='contentContainer'>
       <div className='categoriesContainer'>
@@ -59,7 +70,11 @@ const Content = () => {
           <ScrollMenu>
             {categori.map((v) => {
               return (
-                <button key={v.id} className='categoriItem'>
+                <button
+                  key={v.id}
+                  className='categoriItem'
+                  onClick={() => onFocusCategori(v.id)}
+                >
                   {v.name}
                 </button>
               );
@@ -69,7 +84,13 @@ const Content = () => {
       </div>
       <div className='foodContainer'>
         {categori.map((v) => {
-          return <FoodCategoriComponent key={v.id} categori={v} />;
+          return (
+            <FoodCategoriComponent
+              categoriRef={categoriRef}
+              key={v.id}
+              categori={v}
+            />
+          );
         })}
       </div>
       <Link className='homeGoCartLink' to='/cart'>

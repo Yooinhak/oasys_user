@@ -9,11 +9,13 @@ const FoodInfo = ({ currentFood, onIncreaseAmount, onDecreaseAmount }) => {
       <h1>{currentFood.info.name}</h1>
       <div className='info'>{currentFood.info.info}</div>
       <div className='FoodPriceContainer'>
-        {lang.slice(-7, -5) === 'kr' ? '메뉴 카테고리' : 'menu categories'}
+        {lang.slice(-7, -5) === 'kr' ? '가격' : 'Price'}
         <b>{currentFood.totalPrice.toLocaleString('ko-KR')}</b>
       </div>
       <div className='FoodAmountContainer'>
-        Amount
+      {lang.slice(-7, -5) === 'kr'
+            ? '수량'
+            : 'Amount'}
         <div className='amountBtn'>
           <button onClick={onDecreaseAmount}>-</button>
           <b>{currentFood.amount}</b>
