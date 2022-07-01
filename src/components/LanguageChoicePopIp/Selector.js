@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-export default function Selector({ currentLanguage, onChangeLang }) {
+export default function Selector({
+  onInitialization,
+  currentLanguage,
+  onChangeLang,
+}) {
+  useEffect(() => {
+    onInitialization();
+  });
   return (
     <select
       value={currentLanguage === 'kr' ? 'kr' : 'eng'}

@@ -2,6 +2,7 @@ const ADD_TO_CART = 'cart/ADD_TO_CART';
 const ADJ_INCREASE_AMOUNT = 'cart/ADJ_INCREASE_AMOUNT';
 const ADJ_DECREASE_AMOUNT = 'cart/ADJ_DECREASE_AMOUNT';
 const DELETE_ITEM = 'cart/DELETE_ITEM';
+const INITIALIZATION = 'cart/INITIALIZATIN';
 
 export const add_to_cart = (item) => ({ type: ADD_TO_CART, item });
 export const adj_increase_amount = (id) => ({
@@ -15,6 +16,9 @@ export const adj_decrease_amount = (id) => ({
 export const delete_item = (id) => ({
   type: DELETE_ITEM,
   id,
+});
+export const initialization = () => ({
+  type: INITIALIZATION,
 });
 
 let nextId = 1;
@@ -79,6 +83,11 @@ export default function cart(state = cartState, action) {
           state.sumPrice -
           state.items.filter((v) => v.id === action.id)[0].totalPrice,
         items: state.items.filter((v) => v.id !== action.id),
+      };
+    case INITIALIZATION:
+      return {
+        items: [],
+        sumPrice: 0,
       };
     default:
       return state;
