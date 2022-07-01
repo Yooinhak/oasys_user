@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Selector({ currentLanguage, onChangeLanguage }) {
+export default function Selector({ currentLanguage, onChangeLang }) {
   return (
     <select
-      value={currentLanguage.slice(-7, -5) === 'kr' ? 'kr' : 'eng'}
-      onChange={(e) => onChangeLanguage(e.target.value)}
+      value={currentLanguage === 'kr' ? 'kr' : 'eng'}
+      onChange={(e) => onChangeLang(e.target.value)}
     >
       <option key='korean' value='kr'>
         한국어

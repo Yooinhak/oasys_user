@@ -1,12 +1,13 @@
 import React from 'react';
 import '../scss/homeMain.scss';
-import { Title, About, Content } from '../components/homeMain/index';
+import { Title, Content } from '../components/homeMain/index';
+import { AboutContainer } from '../containers/HomeContainer';
 
 const HomeMain = () => {
   return (
     <div className='homeMainHoleContainer'>
       <Title />
-      <About />
+      <AboutContainer />
       <Content />
     </div>
   );
@@ -36,7 +37,6 @@ export default HomeMain;
                         "price": 0
                       }
                     ],
-                    "essential": "Y"
                   }
                 ],
                 "id": 1

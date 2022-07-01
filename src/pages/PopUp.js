@@ -1,7 +1,7 @@
 import React from 'react';
 import '../scss/popUp.scss';
 import { Link } from 'react-router-dom';
-import { ChangeLanguageContainer } from '../containers/ChangeJsonContainer';
+import { ChangeLanguageContainer } from '../containers/ChangeDataContainer';
 
 const Popup = () => {
   return (

@@ -10,13 +10,17 @@ import {
 import { FoodInfo, Add, Preference } from '../components/order';
 
 export const AdjAmount = () => {
-  const currentFood = useSelector((state) => state.food);
+  const [currentFood, currentLang] = useSelector((state) => [
+    state.food,
+    state.data.currentLang,
+  ]);
   const dispatch = useDispatch();
   const onIncreaseAmount = () => dispatch(increase_amount());
   const onDecreaseAmount = () => dispatch(decrease_amount());
 
   return (
     <FoodInfo
+      currentLang={currentLang}
       currentFood={currentFood}
       onIncreaseAmount={onIncreaseAmount}
       onDecreaseAmount={onDecreaseAmount}

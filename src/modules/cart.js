@@ -26,17 +26,18 @@ const cartState = {
 export default function cart(state = cartState, action) {
   switch (action.type) {
     case ADD_TO_CART:
+      const item = action.item;
       return {
         sumPrice: state.sumPrice + action.item.totalPrice,
         items: [
           ...state.items,
           {
-            totalPrice: action.item.totalPrice,
-            eachPrice: action.item.info.price,
-            name: action.item.info.name,
-            amount: action.item.amount,
-            pref: action.item.pref,
-            add_item: action.item.items,
+            totalPrice: item.totalPrice,
+            eachPrice: item.info.price,
+            name: item.info.name,
+            amount: item.amount,
+            pref: item.pref,
+            add_item: item.items,
             id: nextId++,
           },
         ],

@@ -33,21 +33,6 @@
   justify-content: space-between;
 }
 
-.amountBtn {
-  background-color: #efefef;
-  border-radius: 30px;
-  padding: 0.5%;
-  & > b {
-    margin: 0 5px;
-  }
-
-  & > button {
-    color: black;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-  }
-}
-
 .orderMainContainer {
   @include box-display(flex, 90%, auto);
   padding: 5%;
