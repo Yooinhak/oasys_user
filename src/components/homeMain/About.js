@@ -1,17 +1,14 @@
 import React from 'react';
 import '../../scss/homeMain.scss';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 
-const About = () => {
-  const language = useSelector((state) => state.lang);
-  const storeName = require(`../../sampleData/${language}`).storeInfo.storeName;
+const About = ({ currentStore, currentLang }) => {
   return (
     <div className='introContainer'>
-      <h1>{storeName}</h1>
+      <h1>{currentStore}</h1>
       <div className='guideBtnContainer'>
         <div className='guideBtnExplain'>
-          {language.slice(-7, -5) === 'kr'
+          {currentLang === 'kr'
             ? '처음이신가요? ->'
             : `First Here?\nHow to enjoy ->`}
         </div>

@@ -1,14 +1,12 @@
 import React from 'react';
 import '../../scss/order.scss';
 import { AddItemToCart } from '../../containers/AddCartContainer';
-import { useSelector } from 'react-redux';
 
-const Preference = ({ currentFood, onChangePref, onAddPref }) => {
-  const lang = useSelector((state) => state.lang);
+const Preference = ({ currentLang, currentFood, onChangePref, onAddPref }) => {
   return (
     <div className='orderPrefContainer'>
       <b>
-        {lang.slice(-7, -5) === 'kr'
+        {currentLang === 'kr'
           ? '추가 요청사항'
           : 'Preference, Add Special Instructions'}
       </b>
@@ -25,7 +23,7 @@ const Preference = ({ currentFood, onChangePref, onAddPref }) => {
       })}
       <div className='addTextItem' style={{ marginTop: '6%' }}>
         <b>
-          {lang.slice(-7, -5) === 'kr'
+          {currentLang === 'kr'
             ? '추가 요청사항이 더 있을까요?'
             : 'Something else to say?'}
         </b>

@@ -10,9 +10,9 @@ import GoCart from '../components/order/GoCart';
 import { Items, TotalPrice, Preference } from '../components/cart';
 
 export const AddItemToCart = () => {
-  const [currentFood, language] = useSelector((state) => [
+  const [currentFood, currentLang] = useSelector((state) => [
     state.food,
-    state.lang,
+    state.data.currentLang,
   ]);
   const dispatch = useDispatch();
   const onAddItem = (item) => dispatch(add_to_cart(item));
@@ -20,16 +20,16 @@ export const AddItemToCart = () => {
   return (
     <GoCart
       onAddItem={onAddItem}
-      language={language}
+      currentLang={currentLang}
       currentFood={currentFood}
     />
   );
 };
 
 export const ItemContainer = () => {
-  const [currentCart, lang] = useSelector((state) => [
+  const [currentCart, currentLang] = useSelector((state) => [
     state.cart.items,
-    state.lang,
+    state.data.currentLang,
   ]);
   const dispatch = useDispatch();
   const onIncreaseAmount = (id) => dispatch(adj_increase_amount(id));
@@ -39,7 +39,7 @@ export const ItemContainer = () => {
   return (
     <Items
       currentCart={currentCart}
-      lang={lang}
+      currentLang={currentLang}
       onIncreaseAmount={onIncreaseAmount}
       onDecreaseAmount={onDecreaseAmount}
       onDeleteItem={onDeleteItem}
@@ -48,17 +48,19 @@ export const ItemContainer = () => {
 };
 
 export const TotalPriceContainer = () => {
-  const [currentTotalPrice, lang] = useSelector((state) => [
+  const [currentTotalPrice, currentLang] = useSelector((state) => [
     state.cart.sumPrice,
-    state.lang,
+    state.data.currentLang,
   ]);
-  return <TotalPrice currentTotalPrice={currentTotalPrice} lang={lang} />;
+  return (
+    <TotalPrice currentTotalPrice={currentTotalPrice} lang={currentLang} />
+  );
 };
 
 export const PreferenceContainer = () => {
-  const [currentFoods, lang] = useSelector((state) => [
+  const [currentFoods, currentLang] = useSelector((state) => [
     state.cart.items,
-    state.lang,
+    state.data.currentLang,
   ]);
-  return <Preference lang={lang} currentFoods={currentFoods} />;
+  return <Preference currentLang={currentLang} currentFoods={currentFoods} />;
 };

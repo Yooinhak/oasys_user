@@ -1,8 +1,53 @@
 {
   "storeInfo": {
-    "storeName": "Jang's",
-    "storeInfo": "장가네\n전화번호: 02-732-7522\n주소: 서울 종로구 종로1길 57\n대표자명: \n사업자등록번호: \n상호명: 장가네",
-    "storeIntro": "안녕하세요 장가네입니다."
+    "name": "Jangs",
+    "guide": [
+      {
+        "id": 1,
+        "title": "No-Tips",
+        "content": "We don't give tips in Korea. Instead, give them a smile and thanks."
+      },
+      {
+        "id": 2,
+        "title": "Sharing is caring",
+        "content": "In Korea, various dishes are served at the center of the table, so anyone can have a taste of each dish if they want."
+      },
+      {
+        "id": 3,
+        "title": "Cutlery",
+        "content": "Spoons, chopsticks, and tissues are usually in the drawer under the table."
+      },
+      {
+        "id": 4,
+        "title": "For requests and orders",
+        "content": "If there's a bell on the table, it's to call the staff. If not, it's common to raise your hand or call it “Juh gi yo”."
+      },
+      {
+        "id": 5,
+        "title": "Side dishes",
+        "content": "Side dishes are served for free of charge and you can request for more."
+      },
+      {
+        "id": 6,
+        "title": "To drink water",
+        "content": "Water is usually brought after sitting down. Otherwise, you can usually take it directly from the water purifier or the refrigerator."
+      },
+      {
+        "id": 7,
+        "title": "Alert",
+        "content": "If the menu says spicy, hot, or cold, it can be even more so than you think."
+      },
+      {
+        "id": 8,
+        "title": "Alcohol",
+        "content": "If you drink with someone, it is common manners to pour alcohol to each other, and you often drink after making a toast (“Gun Bae” or “JJan”)."
+      },
+      {
+        "id": 9,
+        "title": "K-BBQ",
+        "content": "In a Korean BBQ restaurant, tongs and scissors are given unless they are grilled by the server. A they are cut on the grill using them and shared.\n\nYou can always enjoy the original taste of the meat. But it is common to put meat and orange sauce on top of vegetable leaves and wrap it all up then eat. And we usually eat all in one."
+      }
+    ]
   },
   "categori": [
     {

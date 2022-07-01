@@ -1,4 +1,5 @@
 import React from 'react';
+import { AmountButton } from '../common/Button';
 import '../../scss/cart.scss';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ const Item = ({ food, onIncreaseAmount, onDecreaseAmount, onDeleteItem }) => {
         </div>
         <ul className='addItemInfoBox'>
           {food.add_item.map((v) => {
-            return <li>{v.item}</li>;
+            return <li key={v.id}>{v.item}</li>;
           })}
         </ul>
       </div>
@@ -22,17 +23,11 @@ const Item = ({ food, onIncreaseAmount, onDecreaseAmount, onDeleteItem }) => {
         <div className='deleteItemFcBox'>
           <button onClick={() => onDeleteItem(food.id)}>x</button>
         </div>
-        <div className='adjAmountFcBox'>
-          <button
-            onClick={() =>
-              food.amount !== 1 ? onDecreaseAmount(food.id) : null
-            }
-          >
-            -
-          </button>
-          <b>{food.amount}</b>
-          <button onClick={() => onIncreaseAmount(food.id)}>+</button>
-        </div>
+        <AmountButton
+          increaseBtn={() => onIncreaseAmount(food.id)}
+          decreaseBtn={() => onDecreaseAmount(food.id)}
+          amount={food.amount}
+        />
       </div>
     </div>
   );
@@ -43,7 +38,7 @@ const Items = ({
   onIncreaseAmount,
   onDecreaseAmount,
   onDeleteItem,
-  lang,
+  currentLang,
 }) => {
   return (
     <div className='itemContainer'>
@@ -62,7 +57,7 @@ const Items = ({
       <div className='addBtnBox'>
         <Link to='/home' style={{ textDecoration: 'none', color: 'inherit' }}>
           <button className='addItemBtn'>
-            {lang.slice(-7, -5) === 'kr' ? '추가하러 가기' : 'Add more items'}
+            {currentLang === 'kr' ? '추가하러 가기' : 'Add more items'}
           </button>
         </Link>
       </div>

@@ -49,13 +49,11 @@ export default function food(state = initialState, action) {
         totalPrice: state.totalPrice + state.info.price,
       };
     case DECREASE_AMOUNT:
-      if (state.amount > 1) {
-        return {
-          ...state,
-          amount: state.amount - 1,
-          totalPrice: state.totalPrice - state.info.price,
-        };
-      } else return state;
+      return {
+        ...state,
+        amount: state.amount - 1,
+        totalPrice: state.totalPrice - state.info.price,
+      };
     case SET_STATE:
       return {
         ...state,

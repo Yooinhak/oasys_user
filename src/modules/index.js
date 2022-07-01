@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import food from './food';
 import cart from './cart';
-import lang from './json';
+import data from './data';
 
 const rootReducer = combineReducers({
   food,
   cart,
-  lang,
+  data,
 });
 
 export default rootReducer;

@@ -5,6 +5,34 @@ import '../../scss/homeMain.scss';
 import { set_state } from '../../modules/food';
 import { useDispatch, useSelector } from 'react-redux';
 
+//가로 스크롤 카테고리
+const CategoriesScrollContainer = ({ categori, categoriRef }) => {
+  const onFocusCategori = (id) => {
+    categoriRef.current[id].scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
+  return (
+    <div className='categoriesScrollContainer'>
+      <ScrollMenu>
+        {categori.map((v) => {
+          return (
+            <button
+              key={v.id}
+              className='categoriItem'
+              onClick={() => onFocusCategori(v.id)}
+            >
+              {v.name}
+            </button>
+          );
+        })}
+      </ScrollMenu>
+    </div>
+  );
+};
+
 // 음식 카테고리별로
 const FoodCategoriComponent = ({ categori, categoriRef }) => {
   return (
@@ -45,43 +73,25 @@ const FoodComponent = ({ food }) => {
 };
 
 const Content = () => {
-  const [language, cartAmount] = useSelector((state) => [
-    state.lang,
+  const [store, cartAmount] = useSelector((state) => [
+    state.data,
     state.cart.items.length,
   ]);
-  const categori = require(`../../sampleData/${language}`).categori;
+  const categori =
+    require(`../../sampleData/${store.currentStore}_${store.currentLang}`).categori;
 
   const categoriRef = useRef([]);
-  const onFocusCategori = (id) => {
-    categoriRef.current[id].scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
 
   return (
     <div className='contentContainer'>
       <div className='categoriesContainer'>
         <h1>
-          {language.slice(-7, -5) === 'kr'
-            ? '메뉴 카테고리'
-            : 'menu categories'}
+          {store.currentLang === 'kr' ? '메뉴 카테고리' : 'menu categories'}
         </h1>
-        <div className='categoriesScrollContainer'>
-          <ScrollMenu>
-            {categori.map((v) => {
-              return (
-                <button
-                  key={v.id}
-                  className='categoriItem'
-                  onClick={() => onFocusCategori(v.id)}
-                >
-                  {v.name}
-                </button>
-              );
-            })}
-          </ScrollMenu>
-        </div>
+        <CategoriesScrollContainer
+          categori={categori}
+          categoriRef={categoriRef}
+        />
       </div>
       <div className='foodContainer'>
         {categori.map((v) => {

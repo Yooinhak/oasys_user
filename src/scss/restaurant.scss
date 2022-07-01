@@ -1,7 +1,16 @@
 @import './common.scss';
 
 .infoHoleContainer {
-  @include box-display(flex, 100%, 100vh, auto, center);
+  @include box-display(flex, 90%, auto, auto, center);
+  padding: 5%;
   flex-direction: column;
   white-space: pre-wrap;
+  h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 3%;
+  }
+}
+
+.eachContainer {
+  margin-top: 5%;
 }
