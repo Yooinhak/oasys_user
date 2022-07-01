@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Cart, Order, Home, PopUp, Info } from './pages';
 
-function App() {
+function Navigation() {
   return (
     <Routes>
       <Route exact path='/' element={<PopUp />} />
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Navigation;

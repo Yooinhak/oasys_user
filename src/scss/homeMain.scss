@@ -43,6 +43,7 @@
 
 .goGuideBtn {
   @include box-display(flex, 5vh, 5vh, center, center);
+  border-radius: 50%;
   color: black;
   font-size: 70%;
 }
@@ -120,6 +121,7 @@ h1 {
   position: fixed;
   right: 3%;
   bottom: 3%;
+  border-radius: 50%;
 }
 
 .homeGoCartLink > .cartAmount {
@@ -129,4 +131,13 @@ h1 {
   right: 3%;
   bottom: 8%;
   z-index: 5;
+}
+
+.scrollToTopBtn {
+  @include box-display(block, 6vh, 6vh, center, center);
+  color: black;
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  border-radius: 50%;
 }

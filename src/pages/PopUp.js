@@ -1,9 +1,9 @@
 import React from 'react';
-import '../scss/languageChoicePopUp.scss';
+import '../scss/popUp.scss';
 import { Link } from 'react-router-dom';
 import { ChangeLanguageContainer } from '../containers/ChangeJsonContainer';
 
-const LanguageChoicePopUp = () => {
+const Popup = () => {
   return (
     <div className='LCPUholeContainer'>
       <div className='LCPUBox'>
@@ -17,4 +17,4 @@ const LanguageChoicePopUp = () => {
   );
 };
 
-export default LanguageChoicePopUp;
+export default Popup;

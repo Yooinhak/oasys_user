@@ -47,6 +47,7 @@ const Items = ({
 }) => {
   return (
     <div className='itemContainer'>
+      <div style={{ marginBottom: '5%' }}>Order</div>
       {currentCart.map((v) => {
         return (
           <Item

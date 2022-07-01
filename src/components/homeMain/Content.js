@@ -98,6 +98,12 @@ const Content = () => {
         <div className='cartAmount'>{cartAmount}</div>
         <button className='goCartBtn'>Cart</button>
       </Link>
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className='scrollToTopBtn'
+      >
+        Top
+      </button>
     </div>
   );
 };
