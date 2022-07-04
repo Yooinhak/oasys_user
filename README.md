@@ -17,6 +17,6 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 
 <h2>✋ 배포</h2>
 
-<img src="https://user-images.githubusercontent.com/57799598/177125482-870fb081-e7bd-46ff-8bea-4e2601cb0f1f.png" style="width: 400px, height: 400px"/>
+<img src="https://user-images.githubusercontent.com/57799598/177125482-870fb081-e7bd-46ff-8bea-4e2601cb0f1f.png" style="width: 400px"/>
 
 <a href="https://yooinhak.github.io/project_4f">바로가기!</a>
