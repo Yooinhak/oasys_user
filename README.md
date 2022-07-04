@@ -15,4 +15,4 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 * 장바구니 구현
 
 <h2>배포</h2>
-<a href="https://yooinhak.github.io/project_4f />
+<a href="https://yooinhak.github.io/project_4f>바로가기!</a>
