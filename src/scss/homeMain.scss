@@ -29,16 +29,16 @@
   background-color: white;
   margin-bottom: 1%;
   border-radius: 10px;
-}
 
-.guideBtnContainer {
-  @include box-display(flex, auto, auto, normal, flex-end);
-  flex-direction: row;
-}
+  .guideBtnContainer {
+    @include box-display(flex, auto, auto, normal, flex-end);
+    flex-direction: row;
 
-.guideBtnExplain {
-  white-space: pre-wrap;
-  font-size: 1.7vh;
+    .guideBtnExplain {
+      white-space: pre-wrap;
+      font-size: 1.7vh;
+    }
+  }
 }
 
 .goGuideBtn {
@@ -48,41 +48,26 @@
   font-size: 70%;
 }
 
-.categoriesContainer {
-  background-color: white;
-  margin-bottom: 1%;
-  border-radius: 10px;
-}
-
 .contentContainer {
   width: 100%;
   border-radius: 10px;
-}
 
-.categoriImg {
-  background-color: gray;
-  margin-left: 5;
+  .categoriesContainer {
+    background-color: white;
+    margin-bottom: 1%;
+    border-radius: 10px;
+  }
 }
 
 .categoriesScrollContainer {
   @include box-display(block, 100%, 15%, center, center);
-}
 
-.categoriItem {
-  @include box-display(flex, 5em, 5em, center, center);
-  color: black;
-  background-color: lighten(gray, 30%);
-  border-radius: 50%;
-  margin: 6px 10px;
-}
-
-.foodBox {
-  @include box-display(flex, 90%, auto, normal, space-between);
-  flex-direction: row;
-  padding: 5%;
-  border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
-  div {
-    width: 100%;
+  .categoriItem {
+    @include box-display(flex, 5em, 5em, center, center);
+    color: black;
+    background-color: lighten(gray, 30%);
+    border-radius: 50%;
+    margin: 6px 10px;
   }
 }
 
@@ -95,6 +80,16 @@
   h1 {
     margin-top: 1%;
   }
+
+  .foodBox {
+    @include box-display(flex, 90%, auto, normal, space-between);
+    flex-direction: row;
+    padding: 5%;
+    border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+    div {
+      width: 100%;
+    }
+  }
 }
 
 .foodExplain {
@@ -102,11 +97,6 @@
     margin-top: 5%;
   }
   width: 40%;
-}
-
-.foodBox > .foodImg {
-  @include box-display(block, 40%, auto);
-  background-color: gray;
 }
 
 h1 {
@@ -117,27 +107,20 @@ h1 {
 
 .goCartBtn {
   @include box-display(block, 6vh, 6vh, center, center);
-  color: black;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  border-radius: 50%;
+  @include circle-box(black, fixed, 50%, 3%, 3%);
+  border: none;
 }
 
 .homeGoCartLink > .cartAmount {
-  @include box-display(block, 2vh, 2vh, center, center);
-  color: red;
-  position: fixed;
-  right: 3%;
-  bottom: 8%;
-  z-index: 5;
+  @include box-display(flex, 2.5vh, 2.5vh, center, center);
+  @include circle-box(white, fixed, 50%, 2%, 7.5%);
+  background-color: black;
+  font-weight: 500;
+  z-index: 2;
 }
 
 .scrollToTopBtn {
   @include box-display(block, 6vh, 6vh, center, center);
-  color: black;
-  position: fixed;
-  right: 3%;
-  bottom: 10%;
-  border-radius: 50%;
+  @include circle-box(black, fixed, 50%, 3%, 10%);
+  border: none;
 }

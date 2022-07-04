@@ -7,9 +7,8 @@
 }
 
 .item {
-  @include box-display(flex, 96%, auto);
+  @include box-display(flex, 96%, auto, normal, space-between);
   padding: 2%;
-  justify-content: space-between;
   & + & {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
@@ -35,18 +34,15 @@
 }
 
 .fcBox {
-  display: flex;
+  @include box-display(flex, auto, auto, normal, space-between);
   flex-direction: column;
-  justify-content: space-between;
   align-items: b {
     margin: 5%;
   }
 }
 
 .deleteItemFcBox {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
+  @include box-display(flex, 100%, auto, normal, flex-end);
   button {
     background-color: white;
     font-size: medium;

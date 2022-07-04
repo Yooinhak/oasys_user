@@ -14,6 +14,7 @@
   @include box-display(flex, 90%, auto);
   flex-direction: column;
   padding: 5%;
+
   .info {
     padding-bottom: 5%;
     margin-bottom: 5%;
@@ -22,15 +23,12 @@
 }
 
 .FoodPriceContainer {
-  display: flex;
-  justify-content: space-between;
+  @include box-display(flex, auto, auto, normal, space-between);
   margin-bottom: 5%;
 }
 
 .FoodAmountContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include box-display(flex, auto, auto, normal, space-between);
 }
 
 .orderMainContainer {
@@ -81,8 +79,7 @@ input {
 
 .addTextItem {
   textarea {
-    width: 97%;
-    height: 10vh;
+    @include box-display(flex, 97%, 10vh);
     margin-top: 5%;
   }
 }
