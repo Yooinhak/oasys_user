@@ -9,5 +9,5 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
  - Font-end: React.js, React(CRA), React-router, Hooks, Redux, Sass
 
 <h2>구현 기능</h2>
-- 안녕
-- 안녕녕
+-안녕
+-안녕녕
