@@ -7,6 +7,10 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 
 <h2>👨‍💻 적용 기술</h2>
  - Font-end: React.js, React(CRA), React-router, Hooks, Redux, Sass
+ 
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&amp;logo=React&amp;logoColor=white" alt="React">
+<img src="https://img.shields.io/badge/redux-%23593d88.svg?style=flat-square&amp;logo=redux&amp;logoColor=white" alt="Redux">
+<img src="https://img.shields.io/badge/SASS-hotpink.svg?style=flat-square&amp;logo=SASS&amp;logoColor=white" alt="SASS">
 
 <h2>🚀 구현 기능</h2>
 
