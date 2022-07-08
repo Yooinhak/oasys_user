@@ -32,6 +32,8 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 - 음식의 수량, 추가 메뉴, 추가 요청 사항 구현
 - 장바구니 구현
 
+![RPReplay_Final1657261558_MP4_AdobeExpress_AdobeExpress_AdobeExpress](https://user-images.githubusercontent.com/57799598/177930816-8dfcd9d8-55e1-499a-8c35-60cc26d69a1e.gif)
+
 <h2>✋ 배포</h2>
 
 <img src="https://user-images.githubusercontent.com/57799598/177257203-7bae2d4a-a14c-482b-8ef7-2e1bbb0b3c24.jpg" style="width: 200px"/>
