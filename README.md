@@ -18,6 +18,10 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
  
 <h2>🚀 구현 기능</h2>
 
+- 언어 선택
+
+![RPReplay_Final1657255776_MP4_AdobeExpress_AdobeExpress](https://user-images.githubusercontent.com/57799598/177925335-76d27bca-9662-469d-8c22-66555ec3512b.gif)
+
 - ScrollMenu 라이브러리를 사용한 카테고리 선택 메뉴 구현
 - 카테고리 선택 포커싱 구현
 
