@@ -34,8 +34,6 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 
 ![RPReplay_Final1657263920_MP4_AdobeExpress_AdobeExpress_AdobeExpress](https://user-images.githubusercontent.com/57799598/177937239-d3818dbe-280e-4bd4-bfe2-fcbea83278c5.gif)
 
-<img src="https://user-images.githubusercontent.com/57799598/177937239-d3818dbe-280e-4bd4-bfe2-fcbea83278c5.gif" style="width: 400px"/>
-
 <h2>✋ 배포</h2>
 
 <img src="https://user-images.githubusercontent.com/57799598/177257203-7bae2d4a-a14c-482b-8ef7-2e1bbb0b3c24.jpg" style="width: 200px"/>
