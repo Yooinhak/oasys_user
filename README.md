@@ -24,15 +24,21 @@ _"우리는 외국인 여행자를 위한 제품을 만들고 있습니다. 그�
 
 - 언어 선택
 
+***
+
 ![scrollFc_MP4_AdobeExpress_AdobeExpress_AdobeExpress](https://user-images.githubusercontent.com/57799598/177929574-b528df42-658e-425b-9874-8dcb39b735ff.gif)
 
 - ScrollMenu 라이브러리를 사용한 카테고리 선택 메뉴 구현
 - 카테고리 선택 포커싱 구현
 
+***
+
 ![RPReplay_Final1657263920_MP4_AdobeExpress_AdobeExpress_AdobeExpress](https://user-images.githubusercontent.com/57799598/177937239-d3818dbe-280e-4bd4-bfe2-fcbea83278c5.gif)
 
 - 음식의 수량, 추가 메뉴, 추가 요청 사항 구현
 - 장바구니 구현
+
+***
 
 <h2>✋ 배포</h2>
 
